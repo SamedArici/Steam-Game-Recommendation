@@ -214,6 +214,3 @@ steam['short_description'] = df.short_description.copy()
 steam['header_image'] = df.header_image.copy()
 steam['screenshots'] = df.screenshots.copy()
 steam[['name','review_score','release_date','developer','publisher','short_description','header_image','screenshots']].to_csv('dataframe.csv',index=False)
-
-with open('similarity.npy', 'wb') as f:
-    np.save(f, similarity)
